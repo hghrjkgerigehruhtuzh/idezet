@@ -1,0 +1,43 @@
+body
+{
+    background-color: white;
+    color: gold;
+    margin: 0px;
+
+}
+.main
+{
+background-color: gray;
+}
+nav {
+    background-color: gold;
+    height: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: grid;
+             gap: 25px;
+             grid-template-columns: repeat(2, 1fr); 
+             text-align: center;
+             
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+nav a:hover
+{
+    background-color: white;
+    color: gold;
+}
