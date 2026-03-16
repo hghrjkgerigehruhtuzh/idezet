@@ -87,7 +87,7 @@ $i++;
 <input type="submit" name="kuldes" value="Ellenőrzés">
 
 </form>
-
+<br><br>
 <?php
 
 if(isset($_POST["kuldes"])){
