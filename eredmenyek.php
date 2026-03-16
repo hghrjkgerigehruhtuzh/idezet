@@ -38,7 +38,7 @@ if (!$result) {
 
 while($row=$result->fetch_assoc()){
 
-echo "<p>".$row["nev"]." - ".$row["pont"]." pont</p>";
+echo "<p>".$row["nev"]." - ".$row["pont"]." - ".$row["kitöltés"]." pont</p>";
 
 }
 
