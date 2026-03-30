@@ -55,11 +55,11 @@ if (!isset($_SESSION['kviz_kerdesek']) || isset($_POST['uj_kviz'])) {
         $helyes_kolto = $sor["kolto"];
         
         echo "<div class='main'>";
-        echo "<h3>$i. kérdés</h3>";
+        echo " <h3> <label for='s$i'>$i. kérdés </label></h3> " ;
         echo "<p><i>" . nl2br(htmlspecialchars($vers)) . "</i></p>";
 
         $disabled = isset($_POST['kuldes']) ? "disabled" : "";
-        echo "<select name='valasz$i' required $disabled>";
+        echo "<select id='s$i' name='valasz$i' required $disabled>";
         echo "<option value=''>Válassz költőt</option>";
         foreach ($koltok as $k) {
             $selected = (isset($_POST["valasz$i"]) && $_POST["valasz$i"] == $k) ? "selected" : "";
