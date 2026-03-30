@@ -2,6 +2,7 @@
 <html lang="hu">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eredmények</title>
 <link rel="stylesheet" href="main.css">
 </head>
@@ -38,7 +39,7 @@ if (!$result) {
 
 while($row=$result->fetch_assoc()){
 
-echo "<p>".$row["nev"]." - ".$row["pont"]." - ".$row["kitöltés"]." pont</p>";
+echo "<p>".$row["nev"]." - ".$row["pont"]." pont - ".$row["kitöltés"]." </p>";
 
 }
 
