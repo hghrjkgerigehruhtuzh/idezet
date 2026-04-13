@@ -29,7 +29,7 @@ $conn=new mysqli($host,$user,$pass,$db);
 
 $conn->set_charset("utf8");
 
-$sql="SELECT * FROM eredmenyek ORDER BY pont DESC";
+$sql="SELECT * FROM eredmenyek GROUP BY nev ORDER BY pont DESC;";
 
 $result = $conn->query($sql);
 if (!$result) {
